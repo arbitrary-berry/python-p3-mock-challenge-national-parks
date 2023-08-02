@@ -72,12 +72,12 @@ X- `raise Exception` if setter fails
 #### NationalPark
 
 - `NationalPark __init__(self, name)`
-  - national_parks should be initialized with a name, as a string
+X- national_parks should be initialized with a name, as a string
 - `NationalPark property name`
-  - Returns a given national_park's name
-  - Should not be able to change after the national_park is created
-  - `raise Exception` if setter fails
-  - _hint: hasattr()_
+X- Returns a given national_park's name
+X- Should not be able to change after the national_park is created
+X- `raise Exception` if setter fails
+X- _hint: hasattr()_
 
 #### Trip
 
