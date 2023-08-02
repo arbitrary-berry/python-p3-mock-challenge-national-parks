@@ -17,10 +17,12 @@ class NationalPark:
             raise Exception
         
     def trips(self):
+        return [trip for trip in Trip.all if trip.national_park == self]
         pass
 
     def visitors(self):
-        pass
+        from classes.visitor import Visitor
+        return [*set([trip.visitor for trip in Visitor.all if trip.national_park == self])]
 
     def total_visits(self):
         pass

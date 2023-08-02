@@ -1,4 +1,5 @@
 from classes.trip import Trip
+from classes.national_park import NationalPark
 
 
 class Visitor:
@@ -16,10 +17,10 @@ class Visitor:
         else:
             raise Exception
 
-
-
     def trips(self):
-        pass
+        return [trip for trip in Trip.all if trip.visitor == self]
+
 
     def national_parks(self):
-        pass
+        return [*set([trip.national_park for trip in NationalPark.all if trip.visitor == self])]
+

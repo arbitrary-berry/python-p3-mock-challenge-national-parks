@@ -100,8 +100,8 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 #### Visitors
 
 - `Visitor trips(self)`
-  - Returns a list of all trips for that visitor
-  - The list of trips must contain type `Trip`
+ X- Returns a list of all trips for that visitor
+ X- The list of trips must contain type `Trip`
 - `Visitor national_parks(self)`
   - Returns a **unique** list of all parks which that visitor has visited.
   - The list of national parks must contain type `NationalPark` 
@@ -109,8 +109,8 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 #### NationalPark
 
 - `NationalPark trips(self)`
-  - Returns a list of all trips planned for this national park
-  - The list of trips must contain type `trip`
+ X- Returns a list of all trips planned for this national park
+ X- The list of trips must contain type `trip`
 - `NationalPark visitors(self)`
   - Returns a **unique** list of all visitors a national park has recieved
   - The list of visitors must contain type `Visitor`
