@@ -102,6 +102,7 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 - `Visitor trips(self)`
  X- Returns a list of all trips for that visitor
  X- The list of trips must contain type `Trip`
+ _______________________________
 - `Visitor national_parks(self)`
   - Returns a **unique** list of all parks which that visitor has visited.
   - The list of national parks must contain type `NationalPark` 
@@ -111,6 +112,7 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 - `NationalPark trips(self)`
  X- Returns a list of all trips planned for this national park
  X- The list of trips must contain type `trip`
+ ______________________________
 - `NationalPark visitors(self)`
   - Returns a **unique** list of all visitors a national park has recieved
   - The list of visitors must contain type `Visitor`
@@ -121,7 +123,9 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 
 - `NationalPark total_visits(self)`
  X - Returns the total number of times that park has been visited
+ __________________________________
+ ### BONUS
 - `NationalPark best_visitor(self)`
- X- Returns the Visitor who has visited the park the most
+ - Returns the Visitor who has visited the park the most
 - `NationalPark classmethod most_visited(cls)`
   - Returns the national_park which has received the most visits
