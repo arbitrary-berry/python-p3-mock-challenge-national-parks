@@ -4,6 +4,7 @@ from classes.trip import Trip
 class NationalPark:
 
     all = []
+
     def __init__(self, name):
         self.name = name
 
@@ -29,30 +30,23 @@ class NationalPark:
         return len(self.trips())
 
     def best_visitor(self):
-        if not self.trips():
-            return None
-        visitors = self.visitors()
-        max_visits = 0
-        best_visitor = None
+        return max(set([trips.visitor for trips in self.trips()]), key=[trips.visitor for trips in self.trips()].count)
+        #OR
+        # if not self.trips():
+        #     return None
+        # visitors = self.visitors()
+        # max_visits = 0
+        # best_visitor = None
 
-        for visitor in visitors:
-            num_visits = len(visitor.trips())
-            if num_visits > max_visits:
-                max_visits = num_visits
-                best_visitor = visitor
-        return best_visitor
+        # for visitor in visitors:
+        #     num_visits = len(visitor.trips())
+        #     if num_visits > max_visits:
+        #         max_visits = num_visits
+        #         best_visitor = visitor
+        # return best_visitor
 
     @classmethod
     def most_visited(cls):
-        if not Trip.all:
-            return None
+        return max(set([trips.national_park for trips in Trip.all]), key=[trips.national_park for trips in Trip.all].count)
 
-        parks_visits = {}
-        for trip in Trip.all:
-            park = trip.national_park
-            parks_visits[park] = parks_visits.get(park, 0) + 1
-
-        sorted_parks = sorted(parks_visits.items(), key=lambda x: x[1], reverse=True)
-
-        return sorted_parks[0][0] 
 
