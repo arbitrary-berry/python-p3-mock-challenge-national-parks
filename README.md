@@ -82,20 +82,20 @@ X- _hint: hasattr()_
 #### Trip
 
 - `Trip __init__(self, visitor, national_park, start_date, end_date)`
-  - Trips should be initialized with a visitor, national_park, start_date(str), end_date(str)
+X- Trips should be initialized with a visitor, national_park, start_date(str), end_date(str)
 
 ### Object Relationship Methods and Properties
 
 #### Trip
 
 - `Trip property visitor`
-  - Returns the visitor object for that trip
-  - Must be of type `Visitor`
-  - `raise Exception` if setter fails
+ X- Returns the visitor object for that trip
+ X- Must be of type `Visitor`
+ X- `raise Exception` if setter fails
 - `Trip property national_park`
-  - Returns the NationalPark object for that trip
-  - Must be of type `NationalPark`
-  - `raise Exception` if setter fails
+ X- Returns the NationalPark object for that trip
+ X- Must be of type `NationalPark`
+ X- `raise Exception` if setter fails
 
 #### Visitors
 
