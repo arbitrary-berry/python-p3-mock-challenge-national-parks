@@ -62,12 +62,12 @@ _Carefully consider where to create your Single Source of Truth._
 #### Visitor
 
 - `Visitor __init__(self, name)`
-  - Visitor should be initialized with a name
+X- Visitor should be initialized with a name
 - `Visitor property name`
-  - Should return the visitor's name
-  - Names must be of type `str`
-  - Names must be between 1 and 15 characters, inclusive
-  - `raise Exception` if setter fails
+X- Should return the visitor's name
+X- Names must be of type `str`
+X- Names must be between 1 and 15 characters, inclusive
+X- `raise Exception` if setter fails
 
 #### NationalPark
 
