@@ -120,8 +120,8 @@ X- Trips should be initialized with a visitor, national_park, start_date(str), e
 #### National Park
 
 - `NationalPark total_visits(self)`
-  - Returns the total number of times that park has been visited
+ X - Returns the total number of times that park has been visited
 - `NationalPark best_visitor(self)`
-  - Returns the Visitor who has visited the park the most
+ X- Returns the Visitor who has visited the park the most
 - `NationalPark classmethod most_visited(cls)`
   - Returns the national_park which has received the most visits

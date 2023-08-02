@@ -22,5 +22,6 @@ class Visitor:
 
 
     def national_parks(self):
-        return [*set([trip.national_park for trip in NationalPark.all if trip.visitor == self])]
+        return list(set([trip.national_park for trip in self.trips()]))
+        #return [*set([trip.national_park for trip in self.trips()])]
 
